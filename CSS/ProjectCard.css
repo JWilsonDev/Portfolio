@@ -1,0 +1,53 @@
+.project-card {
+    max-width: 600px;
+    background: var(--light-bg);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease;
+    cursor: pointer;  flex: 0 0 calc(25% - 40px);  
+}
+
+.project-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.project-info {
+    margin: 0.5rem 1.5rem 1.5rem 1.5rem;
+    
+}
+.project-title {
+    color: var(--accent);
+    font-size: 1.2rem;
+}
+.project-description {
+    color: var(--text-color);
+    opacity: 0.8;
+    font-size: 1rem;
+}
+
+/* Tags */
+
+.tags {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    font-size: 1rem;
+    padding-top: 1rem;
+    justify-content: left;
+}
+
+.tags li {
+    background: var(--primary-color);
+    color: var(--text-color);
+    padding: 0.25rem .75rem;
+    border-radius: 20px;
+}
+
+.tags li:hover{
+    background: var(--text-color);
+    color: var(--primary-color);
+    cursor: default;   
+}
