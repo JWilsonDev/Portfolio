@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jamie Wilson | Gallery</title>
+    <link rel="stylesheet" href="../CSS/Global.css">
+    <link rel="stylesheet" href="../CSS/Gallery.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-content">
+            <a href="../"><h1 class="nav-title">Jamie Wilson;</h1></a>
+            <ul class="nav-list">
+                <li><a href="../#home">Home</a></li>
+                <li><a href="../Projects">Projects</a></li>
+                <li><a href="../index.html#about">About</a></li>
+                <li><a href="../Gallery">Gallery</a></li>
+                <li><a href="../#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2 class="hero-text">Gallery</h2>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+        <div class="gallery-grid">
+            <!-- Gallery cards will be added dynamically from JSON -->
+        </div>
+    </section>
+
+    <footer>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+        <p>&copy; 2025 Game Dev Portfolio. All rights reserved.</p>
+    </footer>
+
+
+    <div id="overlay" class="overlay-hidden">
+        <button id="close-overlay">
+            <div id="overlay-content">
+                <img id="overlay-image" src="../Images/Gallery/DungeonGen_0.png" alt="" loading="eager">
+                <div id="overlay-nav">
+                    <div id="prev-image" class="overlay-nav-button"></div>
+                    <div id="next-image" class="overlay-nav-button"></div>
+                </div>
+                <div id="overlay-info">
+                    <h2 id="overlay-title">aaa</h2>
+                </div>
+            </div>
+        </button>
+    </div>
+
+    <script src="../Scripts/Global.js"></script>
+    <script src="../Scripts/GalleryLoader.js"></script>
+</body>
+</html>

@@ -4,7 +4,7 @@ async function LoadProjects(featuredOnly)
     try
     {
         // Load projects from JSON file
-        const response = await fetch('./Data/Projects.json');
+        const response = await fetch('../Data/Projects.json');
         const data = await response.json();
         const projectGrid = document.querySelector('.project-grid');
 
@@ -28,30 +28,17 @@ function CreateProjectCard(project, projectGrid, featuredOnly)
     {
         const projectCard = document.createElement('div');
         projectCard.className = 'project-card';
-        projectCard.innerHTML = `
-        <img src="${project.image}" alt="${project.title}">
-        <div class="project-info">
-        <h3 class="project-title">${project.title}</h3>
-        <p class="project-description">${project.description}</p>
-<ul class="tags">
-                <li>${project.tag[0]}</li>
-                <li>${project.tag[1]}</li>
-                <li>${project.tag[2]}</li>
-            </ul>
-
-
-        </div>
-
-
-
-
-
-
-
-
-
-
-    `;
+        const htmlContent = `
+            <img src="${project.image}" alt="${project.title}">
+            <div class="project-info">
+                <h3 class="project-title">${project.title}</h3>
+                <p class="project-description">${project.description}</p>
+                <ul class="tags">
+                    ${project.tag.map(tag => `<li>${tag}</li>`).join('')}
+                </ul>
+            </div>
+        `;
+        projectCard.innerHTML = htmlContent;
 
         // Add click handler to open demo URL
         projectCard.style.cursor = 'pointer';

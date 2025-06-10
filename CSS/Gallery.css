@@ -27,11 +27,12 @@ section {
     height: 400px;
 }
 
-.gallery-card img{
+.gallery-card img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
+
 
 @keyframes gradient {
 	0% {
@@ -45,7 +46,89 @@ section {
 	}
 }
 
+body.no-scroll {
+    overflow: hidden;
+}
+
 h2.hero-text {
     font-size: 3.5rem;
 }
 
+#overlay {
+    position: fixed;
+    z-index: 2001;
+    width: 100vw;
+    height: 100vh;    
+    top: 0;
+    left: 0;
+    background-color: rgba(37, 33, 33, 0.5);
+    backdrop-filter: blur(10px);
+}
+
+.overlay-hidden {
+    visibility: collapse;
+}
+
+.overlay-visible {
+    visibility: visible;
+}
+
+#close-overlay {
+    width: 100vw;   
+    height: 100vh;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    outline: none;
+    display: flex;
+}
+
+#overlay-content {
+    width: 75vw;   
+    height: 75vh;
+    border-color: rgb(219, 219, 219);
+    border-width: 10px;
+    border-style: solid;
+    background-color: rgba(40, 46, 40, 0.589); 
+    margin: auto;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+#overlay-image {  
+    width: 100%;
+    height: 100%;
+    object-fit: contain;    
+}
+
+#overlay-nav {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-flex;
+}
+
+.overlay-nav-button {
+    cursor: pointer;
+    width: 50%;
+    height: 100%;
+}
+
+#overlay-info{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: fit-content;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+#overlay-title {
+    margin: 0;
+    font-size: 1.25rem;
+}

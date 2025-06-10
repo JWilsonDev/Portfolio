@@ -2,84 +2,74 @@
     "projects": [
         {
             "id": 1,
-            "title": "Space Shooter",
-            "description": "A classic space shooter game built with Unity, featuring fast-paced action and beautiful space visuals.",
-            "image": "https://tchelete.com/wp-content/uploads/2024/02/minecraft-server-hosten-t.jpg",
-            "tag": ["Unity", "C#", "2D Graphics"],
+            "title": "Cross Digit",
+            "description": "A procedurally generated game where players must figure out answers of mathmatical equations to complete a crossword puzzle.",
+            "image": "../Images/Projects/CrossDigit.png",
+            "tag": ["Unity", "C#", "Puzzle", "Procedural Generation"],
             "featured": true
         },
         {
             "id": 2,
-            "title": "Platform Adventure",
-            "description": "A 2D platformer game with challenging levels and unique mechanics. Features pixel art graphics and smooth animations.",
-            "image": "https://tchelete.com/wp-content/uploads/2024/02/minecraft-server-hosten-t.jpg",
-            "tag": ["Unity", "C#", "Pixel Art"],
+            "title": "Elemental TD",
+            "description": "A first person magical tower defence game. Combine different elemental towers to create unique strategies.",
+            "image": "../Images/Projects/ElementalTD.png",
+            "tag": ["Unreal", "Tower Defence", "FPS"],
             "featured": true
         },
         {
             "id": 3,
-            "title": "Puzzle Quest",
-            "description": "A challenging puzzle game that combines match-3 mechanics with RPG elements. Features procedurally generated puzzles.",
-            "image": "https://tchelete.com/wp-content/uploads/2024/02/minecraft-server-hosten-t.jpg",
-            "tag": ["Unreal Engine", "C++", "Procedural Generation"],
-            "featured": true
+            "title": "Highway To Hell",
+            "description": "A infinate runner taxi game where players must swerve to avoid obstacles and collect lost souls along the highway to hell.",
+            "image": "../Images/Projects/HighwayToHell.png",
+            "tag": ["Unity", "Endless Runner"],
+            "featured": false
         },
         {
             "id": 4,
-            "title": "Racing Simulator",
-            "description": "A realistic racing simulator with physics-based controls and beautiful track environments.",
-            "image": "https://tchelete.com/wp-content/uploads/2024/02/minecraft-server-hosten-t.jpg",
-            "tag": ["Unity", "C#", "Physics Engine"],
+            "title": "Open Arcade",
+            "description": "Players navigate a normal arcade, but when they try to play the games they are met with an unexpected twist on arcade classics",
+            "image": "../Images/Projects/OpenArcade.png",
+            "tag": ["Unreal", "Retro", "Fist Person"],
             "featured": false
         },
         {
             "id": 5,
-            "title": "Space Shooter",
+            "title": "Salary Nights",
             "description": "A classic space shooter game built with Unity, featuring fast-paced action and beautiful space visuals.",
-            "image": "https://tchelete.com/wp-content/uploads/2024/02/minecraft-server-hosten-t.jpg",   
-            "tag": ["Unity", "C#", "2D Graphics"],
-            "featured": false
+            "image": "../Images/Projects/SalaryNights.png",   
+            "tag": ["Unreal", "FPS", "Heist"],
+            "featured": true
         },
         {
             "id": 6,
-            "title": "Platform Adventure",
+            "title": "Tennis",
             "description": "A 2D platformer game with challenging levels and unique mechanics. Features pixel art graphics and smooth animations.",
-            "image": "https://tchelete.com/wp-content/uploads/2024/02/minecraft-server-hosten-t.jpg",
-            "tag": ["Unity", "C#", "Pixel Art"],
+            "image": "../Images/Projects/Tennis.png",
+            "tag": ["FXGL", "Pong", "Pixel Art"],
             "featured": false
         },
         {
             "id": 7,
-            "title": "Puzzle Quest",
+            "title": "Vox Dungeon",
             "description": "A challenging puzzle game that combines match-3 mechanics with RPG elements. Features procedurally generated puzzles.",
-            "image": "https://tchelete.com/wp-content/uploads/2024/02/minecraft-server-hosten-t.jpg",
+            "image": "../Images/Projects/VoxDungeon.png",
             "tag": ["Unreal Engine", "C++", "Procedural Generation"],
             "featured": false
         },
         {
             "id": 8,
-            "title": "Racing Simulator",
+            "title": "VR Museum",
             "description": "A realistic racing simulator with physics-based controls and beautiful track environments.",
-            "image": "https://tchelete.com/wp-content/uploads/2024/02/minecraft-server-hosten-t.jpg",
-            "tag": ["Unity", "C#", "Physics Engine"],
+            "image": "../Images/Projects/VRMuseum.png",
+            "tag": ["Unity", "VR", "Educational"],
             "featured": false
-        }
-        ,
+        },
         {
             "id": 9,
-            "title": "Racing Simulator",
-            "description": "A realistic racing simulator with physics-based controls and beautiful track environments.",
-            "image": "https://tchelete.com/wp-content/uploads/2024/02/minecraft-server-hosten-t.jpg",
-            "tag": ["Unity", "C#", "Physics Engine"],
-            "featured": false
-        }
-        ,
-        {
-            "id": 10,
-            "title": "Racing Simulator",
-            "description": "A realistic racing simulator with physics-based controls and beautiful track environments.",
-            "image": "https://tchelete.com/wp-content/uploads/2024/02/minecraft-server-hosten-t.jpg",
-            "tag": ["Unity", "C#", "Physics Engine"],
+            "title": "Dungeon Generator",
+            "description": "A challenging puzzle game that combines match-3 mechanics with RPG elements. Features procedurally generated puzzles.",
+            "image": "../Images/Projects/DungeonGenerator.PNG",
+            "tag": ["Unreal Engine", "C++", "Procedural Generation"],
             "featured": false
         }
     ]
