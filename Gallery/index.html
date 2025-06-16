@@ -29,6 +29,15 @@
     </section>
 
     <section id="gallery" class="gallery">
+        <div id="gallery-controls">
+            <div id="grid-buttons">
+                <img class="grid_button" src="../Images/Icons/Grid_1.png">
+                <img class="grid_button" src="../Images/Icons/Grid_2.png">
+                <img class="grid_button" src="../Images/Icons/Grid_3.png">
+                <img class="grid_button" src="../Images/Icons/Grid_4.png">
+                <img class="grid_button" src="../Images/Icons/Grid_5.png">
+            </div>
+        </div>
         <div class="gallery-grid">
             <!-- Gallery cards will be added dynamically from JSON -->
         </div>
@@ -60,7 +69,11 @@
         </button>
     </div>
 
+    <button id="scroll-to-top" class="scroll-to-top-hidden">
+        <i class="fas fa-arrow-up"></i>
+    </button>
     <script src="../Scripts/Global.js"></script>
     <script src="../Scripts/GalleryLoader.js"></script>
+    <script src="../Scripts/ScrollToTop.js"></script>
 </body>
 </html>

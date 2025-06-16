@@ -3,12 +3,17 @@
 document.addEventListener('DOMContentLoaded', () => {
     loadGalleryImages();
     OverlaySetup();
+    GridButtonSetup();
+    UpdateGrid(parseInt(getComputedStyle(root).getPropertyValue('--grid-size')));
 });
 
 var images;
 var selectedImageIndex = 0;
 const overlayImage = document.getElementById('overlay-image');
 const overlayTitle = document.getElementById('overlay-title');
+const gridSlider = document.getElementById('gallery-grid-slider');
+let root = document.documentElement;
+const gridButtons = document.getElementsByClassName('grid_button');
 
 // Helper function to generate a static first frame from a GIF
 async function getStaticGifFrame(gifUrl) {
@@ -50,6 +55,8 @@ async function loadGalleryImages() {
             
             galleryCard.appendChild(img);
 
+            galleryCard.style.transform = 'scale(.95)';
+
             if (image.name.toLowerCase().endsWith('.gif')) {
                 let staticSrc = '';
                 try {
@@ -62,19 +69,19 @@ async function loadGalleryImages() {
 
                 galleryCard.addEventListener('mouseenter', () => {
                     img.src = imagePath;
-                    galleryCard.style.transform = 'scale(1.05)';
+                    galleryCard.style.transform = 'scale(1.)';
                 });
                 galleryCard.addEventListener('mouseleave', () => {
                     if (staticSrc) img.src = staticSrc; // Only switch back if static frame was generated
-                    galleryCard.style.transform = 'scale(1)';
+                    galleryCard.style.transform = 'scale(.95)';
                 });
             } else {
                 img.src = imagePath;
                 galleryCard.addEventListener('mouseenter', () => {
-                    galleryCard.style.transform = 'scale(1.05)';
+                    galleryCard.style.transform = 'scale(1)';
                 });
                 galleryCard.addEventListener('mouseleave', () => {
-                    galleryCard.style.transform = 'scale(1)';
+                    galleryCard.style.transform = 'scale(.95)';
                 });
             }
             
@@ -158,3 +165,26 @@ function UpdateGallery()
     overlayTitle.textContent = images[selectedImageIndex].project + " - " + images[selectedImageIndex].title;
 }
 
+function UpdateGrid(number)
+{
+    console.log(number+ "asdas");
+    root.style.setProperty('--grid-size', number);
+
+    for (var i = 0; i < gridButtons.length; i++)
+    {
+        gridButtons[i].classList.remove('grid_active');
+    }
+    
+    gridButtons[number-1].classList.add('grid_active');
+}
+
+function GridButtonSetup()
+{
+    for (var i = 0; i < gridButtons.length; i++) {
+        (function(index) {
+            gridButtons[i].addEventListener('click', function() {
+                UpdateGrid(index + 1);
+            });
+        })(i);
+    }
+}
